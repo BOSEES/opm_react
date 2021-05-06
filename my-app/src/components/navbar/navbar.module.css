@@ -1,0 +1,48 @@
+@value makerDarkPink, makerPink, makerBlack from "../../common/colors.css";
+@value duration from "../../common/animation.css";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: makerPink;
+  padding-right: 2em;
+  padding-left: 1em;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.img {
+  width: 3em;
+  margin-right: 1em;
+  border-radius: 50%;
+}
+
+.lists {
+  display: flex;
+  align-items: center;
+}
+
+.list {
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.list:hover {
+  background-color: makerDarkPink;
+  transition: all duration ease-in;
+}
+
+.btn {
+  display: block;
+  padding:10px;
+}
+

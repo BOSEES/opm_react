@@ -1,0 +1,52 @@
+@value makerWhite, makerDarkPink, makerPink from "../../common/colors.css";
+@value duration from "../../common/animation.css";
+
+.home {
+  height: 33em;
+  text-align: center;
+  max-width: 1800px;
+  margin-bottom:3em;
+}
+
+.backImage {
+  position: absolute;
+  width: 100%;
+  height: 50em;
+  left:0;
+  right: 0;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.avatar {
+  margin-top:3em;
+  width: 13em;
+  height: 13em;
+  border-radius: 50%;
+  border: solid 2px makerDarkPink;
+}
+
+.btn {
+  font-size: x-large;
+  border: solid 3px makerWhite;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.3em 1em;
+  background-color: transparent;
+  margin-top: 1em;
+}
+
+.btn:hover {
+  background-color: makerDarkPink;
+  transition: all duration ease-in;
+}
+
+.intro {
+  background-color: makerWhite;
+  text-align: center;
+}
+
+.contact {
+  background-color: makerPink;
+  text-align: center;
+}
