@@ -1,5 +1,9 @@
 @value makerLarge, makerMedium, makerSmall from "./src/common/size.css";
 
+* {
+  max-width: 800em;
+}
+
 body {
   box-sizing: border-box;
   cursor: default;
@@ -19,24 +23,28 @@ code {
 
 h1 {
   font-size: makerLarge;
+  font-weight: bolder;
   margin:0;
   padding:1em;
 }
 
 h2 {
   font-size: makerMedium;
+  font-weight: bolder;
   margin:0;
   padding:1em;
 }
 
 h3 {
   font-size: makerSmall;
+  font-weight: bolder;
   margin:0;
   padding:1em;
 }
 
 h4 {
   margin:0;
+  font-weight: bolder;
 }
 
 a {
