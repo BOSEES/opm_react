@@ -1,0 +1,59 @@
+@value makerLarge, makerMedium, makerSmall from "./common/size.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  max-height: 100%;
+}
+h1 {
+  font-size: makerLarge;
+  font-weight: bolder;
+  margin:0;
+  padding:1em;
+}
+
+h2 {
+  font-size: makerMedium;
+  font-weight: bolder;
+  margin:0;
+  padding:1em;
+}
+
+h3 {
+  font-size: makerSmall;
+  font-weight: bolder;
+  margin:0;
+  padding:1em;
+}
+
+h4 {
+  margin:0;
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: large;
+}
