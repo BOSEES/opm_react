@@ -17,7 +17,7 @@ const Home = () => {
     <button className={styles.btn}>contact</button>
     </section>
     <section className={styles.intro}>
-    <h1>홈페이지를 만들게 된 계기...</h1>
+    <h2>홈페이지를 만들게 된 계기...</h2>
     <h2>공식홈페이지의 개떡같은 관리와 분류되지 않는 무분별한 게시글 때문에 일일이 검색하고 찾아다니는 수고스러움이 있었습니다.<br/>
       이 페이지를 통해 액기스만 모아놓고 모든 유저들이 좀더 편하게 게임 진행을 원활하게 할수 있도록 하기
       위해 만들었습니다.

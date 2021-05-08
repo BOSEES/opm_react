@@ -1,8 +1,7 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import styles from "./vs.module.css";
 
-const Vs = ({match}) => {
+const Vs = () => {
   return (
     <>
     <img className={styles.backImage} src="/images/banner4.png" alt="사진"></img>

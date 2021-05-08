@@ -12,16 +12,15 @@ import houseDb from "./db/house";
 
 function App() {
   const [housedb, setHousedb] = useState([]);
-  const [guild, setGuild] = useState([]);
-  const [vs, setVs] = useState([]);
-  const [challenge, setChallenge] = useState([]);
-  const [etc, setEtc] = useState([]);
+  // const [guild, setGuild] = useState([]);
+  // const [vs, setVs] = useState([]);
+  // const [challenge, setChallenge] = useState([]);
+  // const [etc, setEtc] = useState([]);
   
   
   useEffect(() => {
     setHousedb(houseDb);
-  });
-  console.log(housedb);
+  },[]);
   return (
     <div className={styles.app}>
     <BrowserRouter>

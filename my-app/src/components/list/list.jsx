@@ -1,13 +1,10 @@
 import React from "react";
 import styles from "./list.module.css";
 
-const List = () => {
+const List = ({title,description,link,maintitle}) => {
+
   return (
-    <ul className={styles.lists}>
-      <i className={styles.title}>길드 보스</i>
-      <li className={styles.list}>asdas</li>
-      <li className={styles.list}>asdas</li>
-    </ul>
+      <li className={styles.title}>{title}</li>
   )
 }
 

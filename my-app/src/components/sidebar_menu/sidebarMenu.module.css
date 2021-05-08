@@ -1,5 +1,9 @@
 .sidebarMenu {
-  width: 15%;
-  height: 100vh;
-  background-color: gray;
+  width: 20em;
+  padding-left: 1em;
+  overflow: scroll;
+}
+
+.miniTitle {
+  padding: 0.5em 0 0.5em 0;
 }
