@@ -1,17 +1,10 @@
-import React, { useRef } from "react";
+import React from "react";
 import styles from "./list.module.css";
 
-const List = ({title,description,link,maintitle}) => {
-  const fooBarNode = useRef(null);
-
-  const handleList = (event) => {
-    event.preventDefault();
-    console.log(event.target.dataset.name);
-  }
-
+const List = ({onTarget,title,description,link,maintitle}) => {
 
   return (
-      <li ref={fooBarNode} onClick={handleList} className={styles.title} data-name={title} >{title}</li>
+      <li onClick={onTarget} className={styles.title} data-name={title} >{title}</li>
   )
 }
 
