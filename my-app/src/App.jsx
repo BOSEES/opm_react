@@ -21,7 +21,7 @@ function App() {
   const [challengeData, setChallenge] = useState([]);
   const [etcData, setEtc] = useState([]);
   
-  
+
   useEffect(() => {
     setHousedb(houseDB);
     setGuild(guildDB);
