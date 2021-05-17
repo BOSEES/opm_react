@@ -8,18 +8,26 @@ import Challenge from "./components/challenge/challenge.jsx";
 import Vs from "./components/vs/vs.jsx";
 import Etc from "./components/etc/etc.jsx";
 import { useState, useEffect } from "react";
-import houseDb from "./db/house";
+import houseDB from "./db/house";
+import challengeDB from "./db/challenge";
+import guildDB from "./db/guild";
+import vsDB from "./db/vs";
+import etcDB from "./db/etc";
 
 function App() {
-  const [housedb, setHousedb] = useState([]);
-  // const [guild, setGuild] = useState([]);
-  // const [vs, setVs] = useState([]);
-  // const [challenge, setChallenge] = useState([]);
-  // const [etc, setEtc] = useState([]);
+  const [houseData, setHousedb] = useState([]);
+  const [guildData, setGuild] = useState([]);
+  const [vsData, setVs] = useState([]);
+  const [challengeData, setChallenge] = useState([]);
+  const [etcData, setEtc] = useState([]);
   
   
   useEffect(() => {
-    setHousedb(houseDb);
+    setHousedb(houseDB);
+    setGuild(guildDB);
+    setChallenge(challengeDB);
+    setEtc(etcDB);
+    setVs(vsDB);
   },[]);
   return (
     <div className={styles.app}>
@@ -30,19 +38,19 @@ function App() {
           <Home/>
         </Route>
         <Route exact path="/house">
-          <House data={housedb}/>
+          <House data={houseData}/>
         </Route>
         <Route exact path="/guild">
-          <Guild/>
+          <Guild data={guildData}/>
         </Route>      
         <Route exact path="/vs">
-          <Vs/>
+          <Vs data={vsData}/>
         </Route>
         <Route path="/challenge">
-          <Challenge/>
+          <Challenge data={challengeData}/>
         </Route>
         <Route path="/etc">
-          <Etc/>
+          <Etc data={etcData}/>
         </Route>
       </Switch>
     </BrowserRouter>
